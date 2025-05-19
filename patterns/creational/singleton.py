@@ -72,18 +72,16 @@ Here’s a thread-safe Singleton using Python’s threading.Lock:
 
 
 import threading
-
 class SingletonMeta(type):
     _instances = {}
-    _lock = threading.Lock()  # Ensures thread safety
-
+    _lock = threading.Lock()
+    
     def __call__(cls, *args, **kwargs):
         with cls._lock:
             if cls not in cls._instances:
-                instance = super().__call__(*args, **kwargs)
-                cls._instances[cls] = instance
+                cls._instances[cls] = super().__call__(*args, **kwargs)
         return cls._instances[cls]
-
+    
 class MySingleton(metaclass=SingletonMeta):
     def __init__(self, value):
         self.value = value
