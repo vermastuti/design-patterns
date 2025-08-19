@@ -108,6 +108,7 @@ class Rider:
 
     def add_ride(self, ride: Ride):
         self.rides.append(ride)  # Add a ride to the rider's list of rides
+        
     def get_total_fare(self):   
         total_fare = 0.0
         for ride in self.rides:
@@ -122,6 +123,7 @@ class Driver:
 
     def add_ride(self, ride: Ride):
         self.rides.append(ride)  # Add a ride to the driver's list of rides
+
     def get_total_fare(self):
         total_fare = 0.0
         for ride in self.rides:
@@ -145,27 +147,7 @@ class RideHailingApp:
         for rider in self.riders:
             total_fare += rider.get_total_fare()
         return total_fare
-    def get_total_fare_for_driver(self):
-        total_fare = 0.0
-        for driver in self.drivers:
-            total_fare += driver.get_total_fare()
-        return total_fare
-    def get_total_fare_for_all_riders(self):
-        total_fare = 0.0
-        for rider in self.riders:
-            total_fare += rider.get_total_fare()
-        return total_fare
-    def get_total_fare_for_all_drivers(self):
-        total_fare = 0.0
-        for driver in self.drivers:
-            total_fare += driver.get_total_fare()
-        return total_fare
-    def get_total_fare_for_all_rides(self):
-        total_fare = 0.0
-        for rider in self.riders:
-            for ride in rider.rides:
-                total_fare += ride.calculate_fare()
-        return total_fare
+    
 
 if __name__ == "__main__":
     # Create a ride-hailing app

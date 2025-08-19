@@ -134,7 +134,7 @@ Discuss Relationships:
 Use aggregation/composition to explain has-a relationships.
  
 
-Encourage Students to Extend:
+Ideas to Extend:
 
-Ask how they’d support combo offers, discount coupons, or real-time tracking.
+Ask how to support combo offers, discount coupons, or real-time tracking
 """
