@@ -1,3 +1,16 @@
+"""
+    Decorator 'is-a' Base Class
+    Decorator 'has-a' Base Class
+
+    Decorator pattern attaches additional responsibilities to an object dynamically. 
+    Decorator providea a flexible alternative to subclassing (inheritance) for extending functionality.
+
+    Real-life usage:
+        Text Editor with Bold and Italics font
+        Form Validations
+
+"""
+
 from abc import ABC, abstractmethod
 
 class Cake(ABC):

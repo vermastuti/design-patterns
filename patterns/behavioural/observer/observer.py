@@ -1,3 +1,11 @@
+"""
+Real-life usage:
+    Used in Notification Service, Event Handling
+
+Example: 
+    See youtube_channel_subscriber.py
+
+"""
 from abc import ABC, abstractmethod
 
 # Observer Interface

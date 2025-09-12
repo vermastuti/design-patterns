@@ -1,3 +1,10 @@
+"""
+    Real-life usage: 
+        Payment Strategy, Sorting Algorithms
+    
+    Used to vary algorithms at runtime
+"""
+
 from abc import ABC, abstractmethod
 
 from abc import ABC, abstractmethod

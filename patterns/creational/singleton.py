@@ -5,7 +5,7 @@ Here’s a simple and clean Python implementation using a class decorator (one o
 
 ⸻
 
-
+Real -life use: Logging System, Configuration Manager, Database Connection
 """
 
 def singleton(cls):
